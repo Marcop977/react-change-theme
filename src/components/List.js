@@ -6,7 +6,7 @@ const List = (props) => {
   return props.data.map((card) => {
     return (
       <div key={card.id} className='col-lg-4 mb-4'>
-        <Card titolo={card.titolo} descrizione={card.descrizione} />
+        <Card {...card} />
       </div>
     );
   });

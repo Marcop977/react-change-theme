@@ -12,11 +12,28 @@ code {
     monospace;
 }
 
-.dark-mode {
-  background-color: rgb(37, 35, 35) !important;
+.dark-theme {
+  --clr-body: #252323;
+  --clr-card: #5c5c5c;
+  --clr-text: #ffffffc9;
 }
 
-.dark-card {
-  background-color: #444444 !important;
-  color: rgba(255, 255, 255, 0.733) !important;
+.light-theme {
+  --clr-body: #e9e9e9;
+  --clr-card: #ffffff;
+  --clr-text: #000000;
+}
+
+body {
+  background-color: var(--clr-body) !important;
+}
+
+.card {
+  background-color: var(--clr-card) !important;
+  color: var(--clr-text) !important;
+}
+
+.btn {
+  background-color: var(--clr-text) !important;
+  color: var(--clr-body) !important;
 }
